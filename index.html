@@ -1,0 +1,1445 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Masy Mohamed | Full Stack Developer</title>
+    <link rel="icon" type="image/png" href="./icons/favicon.ico" />
+    <link rel="stylesheet" href="src/css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Space+Grotesk:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <div class="cursor-dot" id="cursor-dot"></div>
+    <div class="cursor-outline" id="cursor-outline"></div>
+
+    <div class="global-bg">
+      <canvas id="particles-canvas" class="particles-canvas"></canvas>
+      <div class="hero-gradient-orb orb-1"></div>
+      <div class="hero-gradient-orb orb-2"></div>
+      <div class="hero-gradient-orb orb-3"></div>
+      <div class="noise-overlay"></div>
+    </div>
+
+    <header id="main-header">
+      <div class="container header-content">
+        <a href="#cover" class="logo" data-magnetic>
+          <img
+            src="src/images/headerPhoto.png"
+            alt="Masy Mohamed"
+            class="logo-img"
+          />
+        </a>
+        <nav id="main-nav">
+          <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#education-experience">Education & Experience</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#testimonials">Testimonials</a></li>
+          </ul>
+        </nav>
+        <div class="header-actions">
+          <a
+            href="https://github.com/masy43"
+            target="_blank"
+            class="header-social-icon"
+            data-magnetic
+            title="GitHub"
+          >
+            <i class="fa-brands fa-github"></i>
+          </a>
+          <a
+            href="https://www.linkedin.com/in/masy-mohamed/"
+            target="_blank"
+            class="header-social-icon"
+            data-magnetic
+            title="LinkedIn"
+          >
+            <i class="fa-brands fa-linkedin-in"></i>
+          </a>
+          <button
+            id="theme-toggle"
+            class="theme-toggle"
+            title="Toggle Dark/Light Mode"
+            data-magnetic
+          >
+            <i class="fa-solid fa-moon"></i>
+            <i class="fa-solid fa-sun"></i>
+          </button>
+          <button
+            id="mobile-menu-toggle"
+            class="btn-mobile-menu"
+            aria-label="Menu"
+          >
+            <span class="hamburger-line"></span>
+            <span class="hamburger-line"></span>
+            <span class="hamburger-line"></span>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <section id="cover">
+      <div class="container hero-content">
+        <div class="hero-layout">
+          <div class="hero-left">
+            <div class="hero-badge reveal-up" data-delay="0">
+              <span class="status-dot"></span>
+              AVAILABLE FOR HIRE
+            </div>
+            <h1 class="hero-heading">
+              <span class="line-wrapper reveal-up" data-delay="100">
+                <span class="hero-line">Hello, I’m</span>
+              </span>
+              <span class="line-wrapper reveal-up" data-delay="200">
+                <span class="hero-line"
+                  ><span class="gradient-text">Masy</span></span
+                >
+              </span>
+            </h1>
+            <div class="hero-typing reveal-up" data-delay="300">
+              <span class="typing-prefix">&gt;</span>
+              <span class="typing-text" id="typing-text"></span>
+              <span class="typing-cursor">|</span>
+            </div>
+            <p class="hero-description reveal-up" data-delay="400">
+              Crafting robust digital ecosystems through fullstack engineering —
+              from responsive frontends to scalable backend architectures.
+            </p>
+            <div class="hero-cta reveal-up" data-delay="500">
+              <a href="#projects" class="btn btn-primary" data-magnetic>
+                <span>View Projects</span>
+                <i class="fa-solid fa-arrow-right"></i>
+              </a>
+              <a href="#contact" class="btn btn-outline" data-magnetic>
+                <span>Contact Me</span>
+              </a>
+            </div>
+          </div>
+          <div class="hero-right reveal-up" data-delay="400">
+            <div class="floating-card">
+              <div class="card-window">
+                <img
+                  src="src/images/headerPhoto.png"
+                  alt="Masy Mohamed"
+                  class="hero-photo"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="about">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-label reveal-up">01 — About</span>
+          <h2 class="section-title reveal-up" data-delay="100">
+            Building the <span class="gradient-text">Future</span>, One Line at
+            a Time
+          </h2>
+        </div>
+
+        <div class="about-grid">
+          <!-- Photo Column -->
+          <div class="about-photo-wrapper reveal-up" data-delay="150">
+            <div class="about-photo-frame" data-tilt>
+              <div class="about-photo-glow"></div>
+              <img
+                src="src/images/Aboutphoto.png"
+                alt="Masy Mohamed"
+                class="about-photo"
+              />
+              <div class="about-photo-border"></div>
+            </div>
+            <div class="about-photo-decoration">
+              <div class="deco-dot deco-dot-1"></div>
+              <div class="deco-dot deco-dot-2"></div>
+              <div class="deco-dot deco-dot-3"></div>
+              <div class="deco-line deco-line-1"></div>
+              <div class="deco-line deco-line-2"></div>
+            </div>
+          </div>
+
+          <!-- Info Column -->
+          <div class="about-left">
+            <div class="about-intro reveal-up" data-delay="200">
+              <p class="about-lead">
+                I'm <strong>Masy Mohamed</strong> — a full stack developer who
+                turns complex requirements into reliable, scalable products.
+              </p>
+            </div>
+
+            <div class="about-highlights">
+              <div class="about-highlight-card reveal-up" data-delay="250">
+                <div class="highlight-icon">
+                  <i class="fa-solid fa-layer-group"></i>
+                </div>
+                <div class="highlight-content">
+                  <h4>End-to-End Engineering</h4>
+                  <p>
+                    From pixel-perfect frontends to bulletproof APIs and
+                    optimized databases — I own the full stack so nothing falls
+                    through the cracks.
+                  </p>
+                </div>
+              </div>
+              <div class="about-highlight-card reveal-up" data-delay="350">
+                <div class="highlight-icon">
+                  <i class="fa-solid fa-server"></i>
+                </div>
+                <div class="highlight-content">
+                  <h4>Scalable Backend Systems</h4>
+                  <p>
+                    I design secure RESTful APIs, authentication flows, and
+                    server-side architectures built for reliability and growth.
+                  </p>
+                </div>
+              </div>
+              <div class="about-highlight-card reveal-up" data-delay="450">
+                <div class="highlight-icon">
+                  <i class="fa-solid fa-rocket"></i>
+                </div>
+                <div class="highlight-content">
+                  <h4>Performance Obsessed</h4>
+                  <p>
+                    Every project is built with speed, accessibility, and
+                    scalability at its core — ensuring your product isn't just
+                    beautiful, but a powerful tool that converts.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="education-experience">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-label reveal-up">02 — Background</span>
+          <h2 class="section-title reveal-up" data-delay="100">
+            Education & <span class="gradient-text">Experience</span>
+          </h2>
+        </div>
+
+        <div class="bg-tabs reveal-up" data-delay="150">
+          <button class="bg-tab active" data-tab="education">
+            <i class="fa-solid fa-graduation-cap"></i>
+            <span>Education</span>
+          </button>
+          <button class="bg-tab" data-tab="experience">
+            <i class="fa-solid fa-briefcase"></i>
+            <span>Experience</span>
+          </button>
+        </div>
+
+        <div class="bg-panels">
+          <!-- Education Panel -->
+          <div class="bg-panel active" id="panel-education">
+            <div class="bg-card reveal-up" data-delay="200" data-tilt>
+              <div class="bg-card-accent"></div>
+              <div class="bg-card-header">
+                <div class="bg-card-icon">
+                  <i class="fa-solid fa-university"></i>
+                </div>
+                <div class="bg-card-meta">
+                  <span class="bg-card-year">2020 – 2024</span>
+                </div>
+              </div>
+              <h3 class="bg-card-title">B.Sc. Computer Science</h3>
+              <p class="bg-card-org">October 6 University</p>
+              <p class="bg-card-detail">
+                <i class="fa-solid fa-star"></i> GPA: 3.56 / 4.0 (Distinction)
+              </p>
+            </div>
+
+            <div class="bg-card reveal-up" data-delay="300" data-tilt>
+              <div class="bg-card-accent"></div>
+              <div class="bg-card-header">
+                <div class="bg-card-icon">
+                  <i class="fa-solid fa-certificate"></i>
+                </div>
+                <div class="bg-card-meta">
+                  <span class="bg-card-year">2023</span>
+                </div>
+              </div>
+              <h3 class="bg-card-title">HCIA-AI – Huawei</h3>
+              <p class="bg-card-org">Certification</p>
+            </div>
+
+            <div class="bg-card reveal-up" data-delay="400" data-tilt>
+              <div class="bg-card-accent"></div>
+              <div class="bg-card-header">
+                <div class="bg-card-icon">
+                  <i class="fa-solid fa-robot"></i>
+                </div>
+                <div class="bg-card-meta">
+                  <span class="bg-card-year">2024</span>
+                </div>
+              </div>
+              <h3 class="bg-card-title">
+                Introduction to AI and Machine Learning
+              </h3>
+              <p class="bg-card-org">
+                The British University in Egypt | Certification
+              </p>
+            </div>
+          </div>
+
+          <!-- Experience Panel -->
+          <div class="bg-panel" id="panel-experience">
+            <div class="bg-card reveal-up" data-delay="200" data-tilt>
+              <div class="bg-card-accent active-accent"></div>
+              <span class="bg-card-badge">Current</span>
+              <div class="bg-card-header">
+                <div class="bg-card-icon">
+                  <i class="fa-solid fa-code"></i>
+                </div>
+              </div>
+              <h3 class="bg-card-title">Frontend Trainee</h3>
+              <p class="bg-card-org">DEPI</p>
+              <p class="bg-card-detail">
+                <i class="fa-solid fa-arrow-right"></i>
+                Building responsive, accessible web interfaces using HTML, CSS,
+                JavaScript, and React — with a focus on modern UI patterns and
+                performance optimization.
+              </p>
+            </div>
+
+            <div class="bg-card reveal-up" data-delay="300" data-tilt>
+              <div class="bg-card-accent"></div>
+              <div class="bg-card-header">
+                <div class="bg-card-icon">
+                  <i class="fa-solid fa-chart-line"></i>
+                </div>
+              </div>
+              <h3 class="bg-card-title">Data Analyst Intern</h3>
+              <p class="bg-card-org">NTI</p>
+              <p class="bg-card-detail">
+                <i class="fa-solid fa-arrow-right"></i>
+                Focused on ETL pipelines, Power BI dashboards, and business
+                intelligence.
+              </p>
+            </div>
+
+            <div class="bg-card reveal-up" data-delay="400" data-tilt>
+              <div class="bg-card-accent"></div>
+              <div class="bg-card-header">
+                <div class="bg-card-icon">
+                  <i class="fa-solid fa-database"></i>
+                </div>
+              </div>
+              <h3 class="bg-card-title">Data Analyst Intern</h3>
+              <p class="bg-card-org">El-Araby Group</p>
+              <p class="bg-card-detail">
+                <i class="fa-solid fa-arrow-right"></i>
+                Streamlined sales reporting and improved data retrieval
+                efficiency by 30%.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 5. Skills -->
+    <section id="skills">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-label reveal-up">03 — Skills</span>
+          <h2 class="section-title reveal-up" data-delay="100">
+            Tech <span class="gradient-text">Arsenal</span>
+          </h2>
+        </div>
+
+        <div class="skills-filter reveal-up" data-delay="150">
+          <button class="skills-filter-btn active" data-filter="all">
+            All
+          </button>
+          <button class="skills-filter-btn" data-filter="frontend">
+            Frontend
+          </button>
+          <button class="skills-filter-btn" data-filter="backend">
+            Backend
+          </button>
+          <button class="skills-filter-btn" data-filter="database">
+            Database
+          </button>
+          <button class="skills-filter-btn" data-filter="tools">Tools</button>
+        </div>
+
+        <div class="skills-mosaic">
+          <div class="skill-card" data-category="frontend" data-tilt>
+            <div class="skill-card-icon">
+              <img
+                src="src/icons/Icons8/icons8-react-50.png"
+                alt="React"
+                width="44"
+              />
+            </div>
+            <div class="skill-card-body">
+              <h4 class="skill-card-name">React</h4>
+              <p class="skill-card-desc">
+                Build fast, interactive UIs with reusable components — your app
+                stays snappy at any scale.
+              </p>
+            </div>
+            <span class="skill-card-tag">Frontend</span>
+          </div>
+
+          <div class="skill-card" data-category="frontend" data-tilt>
+            <div class="skill-card-icon">
+              <img
+                src="src/icons/Icons8/icons8-typescript.svg"
+                alt="TypeScript"
+                width="44"
+              />
+            </div>
+            <div class="skill-card-body">
+              <h4 class="skill-card-name">TypeScript</h4>
+              <p class="skill-card-desc">
+                Catch bugs before they ship — type safety means fewer errors and
+                faster development.
+              </p>
+            </div>
+            <span class="skill-card-tag">Frontend</span>
+          </div>
+
+          <div class="skill-card" data-category="frontend" data-tilt>
+            <div class="skill-card-icon">
+              <img
+                src="src/icons/Icons8/icons8-html-5-50.svg"
+                alt="HTML5"
+                width="44"
+              />
+            </div>
+            <div class="skill-card-body">
+              <h4 class="skill-card-name">HTML5</h4>
+              <p class="skill-card-desc">
+                Semantic, accessible markup that search engines love — boosting
+                your SEO from the ground up.
+              </p>
+            </div>
+            <span class="skill-card-tag">Frontend</span>
+          </div>
+
+          <div class="skill-card" data-category="frontend" data-tilt>
+            <div class="skill-card-icon">
+              <img
+                src="src/icons/Icons8/icons8-css3-50.svg"
+                alt="CSS3"
+                width="44"
+              />
+            </div>
+            <div class="skill-card-body">
+              <h4 class="skill-card-name">CSS3</h4>
+              <p class="skill-card-desc">
+                Pixel-perfect layouts with smooth animations — your site looks
+                polished on every device.
+              </p>
+            </div>
+            <span class="skill-card-tag">Frontend</span>
+          </div>
+
+          <div class="skill-card" data-category="frontend" data-tilt>
+            <div class="skill-card-icon">
+              <img
+                src="src/icons/Icons8/icons8-tailwindcss.svg"
+                alt="Tailwind CSS"
+                width="44"
+              />
+            </div>
+            <div class="skill-card-body">
+              <h4 class="skill-card-name">Tailwind</h4>
+              <p class="skill-card-desc">
+                Rapid UI development with utility-first classes — consistent
+                design, zero bloat.
+              </p>
+            </div>
+            <span class="skill-card-tag">Frontend</span>
+          </div>
+
+          <div class="skill-card" data-category="frontend" data-tilt>
+            <div class="skill-card-icon">
+              <img
+                src="src/icons/Icons8/icons8-bootstrap.svg"
+                alt="Bootstrap"
+                width="44"
+              />
+            </div>
+            <div class="skill-card-body">
+              <h4 class="skill-card-name">Bootstrap</h4>
+              <p class="skill-card-desc">
+                Production-ready, responsive components — launch faster with a
+                proven design system.
+              </p>
+            </div>
+            <span class="skill-card-tag">Frontend</span>
+          </div>
+
+          <!-- Backend -->
+          <div class="skill-card" data-category="backend" data-tilt>
+            <div class="skill-card-icon">
+              <img
+                src="src/icons/Icons8/icons8-node-js-50.png"
+                alt="Node.js"
+                width="44"
+              />
+            </div>
+            <div class="skill-card-body">
+              <h4 class="skill-card-name">Node.js</h4>
+              <p class="skill-card-desc">
+                JavaScript everywhere — one language for frontend and backend
+                means faster delivery and lower costs.
+              </p>
+            </div>
+            <span class="skill-card-tag">Backend</span>
+          </div>
+
+          <div class="skill-card" data-category="backend" data-tilt>
+            <div class="skill-card-icon">
+              <img
+                src="src/icons/Icons8/icons8-nestjs.svg"
+                alt="NestJS"
+                width="44"
+              />
+            </div>
+            <div class="skill-card-body">
+              <h4 class="skill-card-name">NestJS</h4>
+              <p class="skill-card-desc">
+                Enterprise-grade architecture out of the box — scalable,
+                maintainable APIs that grow with your business.
+              </p>
+            </div>
+            <span class="skill-card-tag">Backend</span>
+          </div>
+
+          <div class="skill-card" data-category="backend" data-tilt>
+            <div class="skill-card-icon">
+              <img
+                src="src/icons/Icons8/icons8-express-js.svg"
+                alt="Express.js"
+                width="44"
+              />
+            </div>
+            <div class="skill-card-body">
+              <h4 class="skill-card-name">Express.js</h4>
+              <p class="skill-card-desc">
+                Lightweight and blazing fast — ideal for RESTful APIs and
+                microservices that need to perform.
+              </p>
+            </div>
+            <span class="skill-card-tag">Backend</span>
+          </div>
+
+          <div class="skill-card" data-category="backend" data-tilt>
+            <div class="skill-card-icon">
+              <img
+                src="src/icons/Icons8/icons8-python.svg"
+                alt="Python"
+                width="44"
+              />
+            </div>
+            <div class="skill-card-body">
+              <h4 class="skill-card-name">Python</h4>
+              <p class="skill-card-desc">
+                Versatile scripting and automation — from data processing to
+                backend logic, it handles it all.
+              </p>
+            </div>
+            <span class="skill-card-tag">Backend</span>
+          </div>
+
+          <!-- Database -->
+          <div class="skill-card" data-category="database" data-tilt>
+            <div class="skill-card-icon">
+              <img
+                src="src/icons/Icons8/icons8-postgresql.svg"
+                alt="PostgreSQL"
+                width="44"
+              />
+            </div>
+            <div class="skill-card-body">
+              <h4 class="skill-card-name">PostgreSQL</h4>
+              <p class="skill-card-desc">
+                Rock-solid relational database — handles complex queries and
+                massive datasets with ease.
+              </p>
+            </div>
+            <span class="skill-card-tag">Database</span>
+          </div>
+
+          <div class="skill-card" data-category="database" data-tilt>
+            <div class="skill-card-icon">
+              <img
+                src="src/icons/Icons8/icons8-sql-50.png"
+                alt="SQL"
+                width="44"
+              />
+            </div>
+            <div class="skill-card-body">
+              <h4 class="skill-card-name">SQL</h4>
+              <p class="skill-card-desc">
+                Efficient data retrieval and manipulation — optimized queries
+                keep your app lightning fast.
+              </p>
+            </div>
+            <span class="skill-card-tag">Database</span>
+          </div>
+
+          <div class="skill-card" data-category="database" data-tilt>
+            <div class="skill-card-icon">
+              <img
+                src="src/icons/Icons8/icons8-prisma-orm-50.png"
+                alt="Prisma"
+                width="44"
+              />
+            </div>
+            <div class="skill-card-body">
+              <h4 class="skill-card-name">Prisma</h4>
+              <p class="skill-card-desc">
+                Type-safe database access with auto-generated queries — fewer
+                bugs, faster development cycles.
+              </p>
+            </div>
+            <span class="skill-card-tag">Database</span>
+          </div>
+
+          <!-- Tools -->
+          <div class="skill-card" data-category="tools" data-tilt>
+            <div class="skill-card-icon">
+              <img src="src/icons/Icons8/icons8-git.svg" alt="Git" width="44" />
+            </div>
+            <div class="skill-card-body">
+              <h4 class="skill-card-name">Git</h4>
+              <p class="skill-card-desc">
+                Version control that keeps your codebase safe — track changes,
+                collaborate, and roll back with confidence.
+              </p>
+            </div>
+            <span class="skill-card-tag">Tools</span>
+          </div>
+
+          <div class="skill-card" data-category="tools" data-tilt>
+            <div class="skill-card-icon">
+              <img
+                src="src/icons/Icons8/icons8-docker.svg"
+                alt="Docker"
+                width="44"
+              />
+            </div>
+            <div class="skill-card-body">
+              <h4 class="skill-card-name">Docker</h4>
+              <p class="skill-card-desc">
+                Containerized deployments — your app runs identically
+                everywhere, from dev to production.
+              </p>
+            </div>
+            <span class="skill-card-tag">Tools</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="services">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-label reveal-up">04 — Services</span>
+          <h2 class="section-title reveal-up" data-delay="100">What I Offer</h2>
+        </div>
+        <div class="services-bento">
+          <!-- Featured card — spans 2 columns -->
+          <div class="srv-card srv-card--featured" data-tilt>
+            <div class="srv-card__accent"></div>
+            <span class="srv-card__num">01</span>
+            <div class="srv-card__icon">
+              <i class="fa-solid fa-code"></i>
+            </div>
+            <div class="srv-card__body">
+              <h3 class="srv-card__title">Full Stack Web Development</h3>
+              <p class="srv-card__desc">
+                Building complete, scalable, and secure web applications using
+                modern technologies with clean architecture and best practices.
+              </p>
+            </div>
+            <div class="srv-card__arrow">
+              <i class="fa-solid fa-arrow-right"></i>
+            </div>
+          </div>
+
+          <div class="srv-card" data-tilt>
+            <div class="srv-card__accent"></div>
+            <span class="srv-card__num">02</span>
+            <div class="srv-card__icon">
+              <i class="fa-brands fa-react"></i>
+            </div>
+            <div class="srv-card__body">
+              <h3 class="srv-card__title">Frontend Development</h3>
+              <p class="srv-card__desc">
+                Creating modern, fast, and responsive user interfaces with
+                smooth UX and optimized performance.
+              </p>
+            </div>
+            <div class="srv-card__arrow">
+              <i class="fa-solid fa-arrow-right"></i>
+            </div>
+          </div>
+
+          <div class="srv-card" data-tilt>
+            <div class="srv-card__accent"></div>
+            <span class="srv-card__num">03</span>
+            <div class="srv-card__icon">
+              <i class="fa-solid fa-server"></i>
+            </div>
+            <div class="srv-card__body">
+              <h3 class="srv-card__title">Backend &amp; API Development</h3>
+              <p class="srv-card__desc">
+                Developing secure RESTful APIs, authentication systems, and
+                powerful server-side logic.
+              </p>
+            </div>
+            <div class="srv-card__arrow">
+              <i class="fa-solid fa-arrow-right"></i>
+            </div>
+          </div>
+
+          <div class="srv-card" data-tilt>
+            <div class="srv-card__accent"></div>
+            <span class="srv-card__num">04</span>
+            <div class="srv-card__icon">
+              <i class="fa-solid fa-database"></i>
+            </div>
+            <div class="srv-card__body">
+              <h3 class="srv-card__title">Database Design</h3>
+              <p class="srv-card__desc">
+                Designing optimized databases using MongoDB, MySQL, or
+                PostgreSQL with high performance.
+              </p>
+            </div>
+            <div class="srv-card__arrow">
+              <i class="fa-solid fa-arrow-right"></i>
+            </div>
+          </div>
+
+          <div class="srv-card" data-tilt>
+            <div class="srv-card__accent"></div>
+            <span class="srv-card__num">05</span>
+            <div class="srv-card__icon">
+              <i class="fa-solid fa-user-shield"></i>
+            </div>
+            <div class="srv-card__body">
+              <h3 class="srv-card__title">Auth &amp; Security Systems</h3>
+              <p class="srv-card__desc">
+                Implementing secure login systems using JWT, OAuth, and
+                role-based access control.
+              </p>
+            </div>
+            <div class="srv-card__arrow">
+              <i class="fa-solid fa-arrow-right"></i>
+            </div>
+          </div>
+
+          <!-- Featured card — spans 2 columns -->
+          <div class="srv-card srv-card--featured" data-tilt>
+            <div class="srv-card__accent"></div>
+            <span class="srv-card__num">06</span>
+            <div class="srv-card__icon">
+              <i class="fa-solid fa-gauge-high"></i>
+            </div>
+            <div class="srv-card__body">
+              <h3 class="srv-card__title">Performance &amp; SEO</h3>
+              <p class="srv-card__desc">
+                Improving website speed, loading time, and search engine
+                visibility for better ranking and user experience.
+              </p>
+            </div>
+            <div class="srv-card__arrow">
+              <i class="fa-solid fa-arrow-right"></i>
+            </div>
+          </div>
+
+          <div class="srv-card" data-tilt>
+            <div class="srv-card__accent"></div>
+            <span class="srv-card__num">07</span>
+            <div class="srv-card__icon">
+              <i class="fa-solid fa-cloud-arrow-up"></i>
+            </div>
+            <div class="srv-card__body">
+              <h3 class="srv-card__title">Deployment &amp; Hosting</h3>
+              <p class="srv-card__desc">
+                Deploying applications on cloud platforms with proper
+                configuration and monitoring.
+              </p>
+            </div>
+            <div class="srv-card__arrow">
+              <i class="fa-solid fa-arrow-right"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-label reveal-up">05 — Work</span>
+          <h2 class="section-title reveal-up" data-delay="100">
+            Featured Projects
+          </h2>
+        </div>
+        <div class="proj-showcase">
+          <div class="proj-card" data-tilt>
+            <div class="proj-card__visual">
+              <img
+                src="src/images/sleek-weather/mockup.png"
+                alt="Weather App Project"
+              />
+              <div class="proj-card__overlay">
+                <a
+                  href="https://github.com/masy43/Weather-App"
+                  target="_blank"
+                  class="proj-card__overlay-btn"
+                  data-magnetic
+                >
+                  <i class="fa-brands fa-github"></i>
+                </a>
+              </div>
+              <div class="proj-card__badge">Frontend</div>
+            </div>
+            <div class="proj-card__content">
+              <div class="proj-card__tags">
+                <span class="proj-card__tag">HTML</span>
+                <span class="proj-card__tag">CSS</span>
+                <span class="proj-card__tag">JavaScript</span>
+                <span class="proj-card__tag">Leaflet.js</span>
+              </div>
+              <h3 class="proj-card__title">Sleek Weather</h3>
+              <p class="proj-card__desc">
+                A modern weather dashboard for tracking real-time conditions,
+                forecasts, and air quality with an interactive map and theme
+                switching.
+              </p>
+              <div class="proj-card__footer">
+                <a
+                  href="https://weather-app-ten-fawn-48.vercel.app/"
+                  target="_blank"
+                  class="proj-card__link proj-card__link--live"
+                  data-magnetic
+                >
+                  <i class="fa-solid fa-arrow-up-right-from-square"></i> Live
+                  Demo
+                </a>
+                <a
+                  href="https://github.com/masy43/Weather-App"
+                  target="_blank"
+                  class="proj-card__link"
+                  data-magnetic
+                >
+                  <i class="fa-brands fa-github"></i> GitHub
+                </a>
+                <button
+                  class="proj-card__link proj-card__link--glass btn-features"
+                  data-project="Sleek Weather"
+                  data-features="Real-time weather data with OpenWeatherMap API integration, Interactive Leaflet.js map with location search and geolocation, 7-day forecast with hourly breakdown and air quality index, Calendar view with historical weather data, Dark/light theme switching with localStorage persistence"
+                  data-magnetic
+                >
+                  <i class="fa-solid fa-list-check"></i> Features
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="proj-card" data-tilt>
+            <div class="proj-card__visual">
+              <img
+                src="src/images/smart-home/mockup.webp"
+                alt="SmartHome Project"
+              />
+              <div class="proj-card__overlay">
+                <a
+                  href="https://github.com/masy43/SmartHome-Backend-nestjs"
+                  target="_blank"
+                  class="proj-card__overlay-btn"
+                  data-magnetic
+                >
+                  <i class="fa-brands fa-github"></i>
+                </a>
+              </div>
+              <div class="proj-card__badge">Backend</div>
+            </div>
+            <div class="proj-card__content">
+              <div class="proj-card__tags">
+                <span class="proj-card__tag">NestJS</span>
+                <span class="proj-card__tag">TypeScript</span>
+                <span class="proj-card__tag">Node.js</span>
+              </div>
+              <h3 class="proj-card__title">SmartHome</h3>
+              <p class="proj-card__desc">
+                Backend services for a smart home platform, exposing device
+                control, scheduling, and telemetry endpoints.
+              </p>
+              <div class="proj-card__footer">
+                <a
+                  href="https://github.com/masy43/SmartHome-Backend-nestjs"
+                  target="_blank"
+                  class="proj-card__link"
+                  data-magnetic
+                >
+                  <i class="fa-brands fa-github"></i> GitHub
+                </a>
+                <button
+                  class="proj-card__link proj-card__link--glass btn-features"
+                  data-project="SmartHome"
+                  data-features="Reduced API latency by ~30% via Redis caching and optimized data access paths, Improved reliability with queue-based task processing and request validation guards, Added observability (structured logging + health checks) to speed up issue triage"
+                  data-magnetic
+                >
+                  <i class="fa-solid fa-list-check"></i> Features
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="proj-card" data-tilt>
+            <div class="proj-card__visual">
+              <img
+                src="src/images/beauty-mate/mockup.webp"
+                alt="BeautyMate Project"
+              />
+              <div class="proj-card__overlay">
+                <a
+                  href="https://github.com/masy43/GRADUATION-PROJECT-NODEJS"
+                  target="_blank"
+                  class="proj-card__overlay-btn"
+                  data-magnetic
+                >
+                  <i class="fa-brands fa-github"></i>
+                </a>
+              </div>
+              <div class="proj-card__badge">Backend</div>
+            </div>
+            <div class="proj-card__content">
+              <div class="proj-card__tags">
+                <span class="proj-card__tag">Node.js</span>
+                <span class="proj-card__tag">Express.js</span>
+                <span class="proj-card__tag">TypeScript</span>
+              </div>
+              <h3 class="proj-card__title">BeautyMate</h3>
+              <p class="proj-card__desc">
+                Built RESTful services for Beauty Mate to manage users,
+                bookings, catalog data, and recommendations.
+              </p>
+              <div class="proj-card__footer">
+                <a
+                  href="https://github.com/masy43/GRADUATION-PROJECT-NODEJS"
+                  target="_blank"
+                  class="proj-card__link"
+                  data-magnetic
+                >
+                  <i class="fa-brands fa-github"></i> GitHub
+                </a>
+                <button
+                  class="proj-card__link proj-card__link--glass btn-features"
+                  data-project="BeautyMate"
+                  data-features="Streamlined booking flow and reduced manual scheduling conflicts, Added centralized auth and rate limiting to stabilize public endpoints, Documented REST APIs for faster onboarding and front-end integration"
+                  data-magnetic
+                >
+                  <i class="fa-solid fa-list-check"></i> Features
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="proj-card" data-tilt>
+            <div class="proj-card__visual">
+              <img
+                src="src/images/student-hub/mockup.png"
+                alt="StudentHub Project"
+              />
+              <div class="proj-card__overlay">
+                <a
+                  href="https://github.com/masy43/Student-Management-System"
+                  target="_blank"
+                  class="proj-card__overlay-btn"
+                  data-magnetic
+                >
+                  <i class="fa-brands fa-github"></i>
+                </a>
+              </div>
+              <div class="proj-card__badge">Frontend</div>
+            </div>
+            <div class="proj-card__content">
+              <div class="proj-card__tags">
+                <span class="proj-card__tag">HTML</span>
+                <span class="proj-card__tag">CSS</span>
+                <span class="proj-card__tag">JavaScript</span>
+              </div>
+              <h3 class="proj-card__title">StudentHub</h3>
+              <p class="proj-card__desc">
+                A sleek student management system with a real-time dashboard,
+                live stats, theme switching, and a fully responsive mobile-first
+                design.
+              </p>
+              <div class="proj-card__footer">
+                <a
+                  href="https://student-management-system-inky-two.vercel.app/"
+                  target="_blank"
+                  class="proj-card__link proj-card__link--live"
+                  data-magnetic
+                >
+                  <i class="fa-solid fa-arrow-up-right-from-square"></i> Live
+                  Demo
+                </a>
+                <a
+                  href="https://github.com/masy43/Student-Management-System"
+                  target="_blank"
+                  class="proj-card__link"
+                  data-magnetic
+                >
+                  <i class="fa-brands fa-github"></i> GitHub
+                </a>
+                <button
+                  class="proj-card__link proj-card__link--glass btn-features"
+                  data-project="StudentHub"
+                  data-features="Real-time dashboard with live statistics and student counts, Search and sort/filter students by name or department, Toast notifications for all CRUD operations, Dark/light theme switching with smooth transitions, Fully responsive mobile-first layout"
+                  data-magnetic
+                >
+                  <i class="fa-solid fa-list-check"></i> Features
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="proj-card" data-tilt>
+            <div class="proj-card__visual">
+              <img
+                src="src/images/taskflow/mockup.png"
+                alt="TaskFlow Project"
+              />
+              <div class="proj-card__overlay">
+                <a
+                  href="https://github.com/masy43/to-do-list"
+                  target="_blank"
+                  class="proj-card__overlay-btn"
+                  data-magnetic
+                >
+                  <i class="fa-brands fa-github"></i>
+                </a>
+              </div>
+              <div class="proj-card__badge">Frontend</div>
+            </div>
+            <div class="proj-card__content">
+              <div class="proj-card__tags">
+                <span class="proj-card__tag">HTML</span>
+                <span class="proj-card__tag">CSS</span>
+                <span class="proj-card__tag">JavaScript</span>
+              </div>
+              <h3 class="proj-card__title">TaskFlow</h3>
+              <p class="proj-card__desc">
+                A cinematic task manager with priorities, due dates, categories,
+                subtasks, keyboard shortcuts, and JSON export — zero
+                dependencies.
+              </p>
+              <div class="proj-card__footer">
+                <a
+                  href="https://to-do-list-omega-neon-30.vercel.app/"
+                  target="_blank"
+                  class="proj-card__link proj-card__link--live"
+                  data-magnetic
+                >
+                  <i class="fa-solid fa-arrow-up-right-from-square"></i> Live
+                  Demo
+                </a>
+                <a
+                  href="https://github.com/masy43/to-do-list"
+                  target="_blank"
+                  class="proj-card__link"
+                  data-magnetic
+                >
+                  <i class="fa-brands fa-github"></i> GitHub
+                </a>
+                <button
+                  class="proj-card__link proj-card__link--glass btn-features"
+                  data-project="TaskFlow"
+                  data-features="Priority levels and due dates with overdue tracking, Categories and subtasks for organized task management, Keyboard shortcuts for power-user productivity, Dark/light theme with cinematic red and black aesthetic, JSON export and import for data portability"
+                  data-magnetic
+                >
+                  <i class="fa-solid fa-list-check"></i> Features
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="proj-card" data-tilt>
+            <div class="proj-card__visual">
+              <img src="src/images/banksys/mockup.png" alt="BankSys Project" />
+              <div class="proj-card__overlay">
+                <a
+                  href="https://github.com/masy43/Banking-System-JS"
+                  target="_blank"
+                  class="proj-card__overlay-btn"
+                  data-magnetic
+                >
+                  <i class="fa-brands fa-github"></i>
+                </a>
+              </div>
+              <div class="proj-card__badge">Full Stack</div>
+            </div>
+            <div class="proj-card__content">
+              <div class="proj-card__tags">
+                <span class="proj-card__tag">JavaScript</span>
+                <span class="proj-card__tag">Node.js</span>
+                <span class="proj-card__tag">HTML</span>
+                <span class="proj-card__tag">CSS</span>
+              </div>
+              <h3 class="proj-card__title">BankSys</h3>
+              <p class="proj-card__desc">
+                A full-featured banking dashboard with account management,
+                transactions, security controls, and real-time activity
+                monitoring — no frameworks.
+              </p>
+              <div class="proj-card__footer">
+                <a
+                  href="https://banking-system-js.vercel.app/"
+                  target="_blank"
+                  class="proj-card__link proj-card__link--live"
+                  data-magnetic
+                >
+                  <i class="fa-solid fa-arrow-up-right-from-square"></i> Live
+                  Demo
+                </a>
+                <a
+                  href="https://github.com/masy43/Banking-System-JS"
+                  target="_blank"
+                  class="proj-card__link"
+                  data-magnetic
+                >
+                  <i class="fa-brands fa-github"></i> GitHub
+                </a>
+                <button
+                  class="proj-card__link proj-card__link--glass btn-features"
+                  data-project="BankSys"
+                  data-features="10 banking functions including deposits and transfers and interest calculation, Interactive Silver/Platinum themed dashboard with live stats, Security controls — freeze/unfreeze accounts and daily limits and suspicious activity detection, Modular architecture with clean separation into validators and models and services, Zero external dependencies — pure vanilla JavaScript frontend and backend"
+                  data-magnetic
+                >
+                  <i class="fa-solid fa-list-check"></i> Features
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="testimonials">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-label reveal-up">06 — Testimonials</span>
+          <h2 class="section-title reveal-up" data-delay="100">
+            What Clients Say
+          </h2>
+        </div>
+        <div class="testi-track">
+          <!-- Card 1 -->
+          <div class="testi-card" data-tilt>
+            <div class="testi-card__quote">
+              <i class="fa-solid fa-quote-left"></i>
+            </div>
+            <div class="testi-card__stars">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </div>
+            <p class="testi-card__text">
+              "Working with Mohamed was an absolute pleasure. He delivered a
+              pixel-perfect React application that exceeded our expectations.
+              His attention to detail and clean code made future updates
+              seamless."
+            </p>
+            <div class="testi-card__author">
+              <div class="testi-card__avatar">SJ</div>
+              <div class="testi-card__meta">
+                <span class="testi-card__name">Sarah Johnson</span>
+                <span class="testi-card__role">Product Manager, TechCorp</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 2 -->
+          <div class="testi-card" data-tilt>
+            <div class="testi-card__quote">
+              <i class="fa-solid fa-quote-left"></i>
+            </div>
+            <div class="testi-card__stars">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </div>
+            <p class="testi-card__text">
+              "Mohamed transformed our e-commerce platform with his expertise in
+              React and TypeScript. The performance improvements were
+              remarkable, and the codebase is now much more maintainable."
+            </p>
+            <div class="testi-card__author">
+              <div class="testi-card__avatar">MC</div>
+              <div class="testi-card__meta">
+                <span class="testi-card__name">Michael Chen</span>
+                <span class="testi-card__role">CTO, ShopHub</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 3 -->
+          <div class="testi-card" data-tilt>
+            <div class="testi-card__quote">
+              <i class="fa-solid fa-quote-left"></i>
+            </div>
+            <div class="testi-card__stars">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </div>
+            <p class="testi-card__text">
+              "Professional, responsive, and highly skilled. Mohamed converted
+              our complex Figma designs into a beautiful, responsive web
+              application. I highly recommend his services!"
+            </p>
+            <div class="testi-card__author">
+              <div class="testi-card__avatar">ER</div>
+              <div class="testi-card__meta">
+                <span class="testi-card__name">Emily Rodriguez</span>
+                <span class="testi-card__role"
+                  >Design Lead, CreativeStudio</span
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-label reveal-up">07 — Contact</span>
+          <h2 class="section-title reveal-up" data-delay="100">
+            Let's Work Together
+          </h2>
+        </div>
+
+        <div class="cnt-grid">
+          <!-- Left — Info Panel -->
+          <div class="cnt-info">
+            <p class="cnt-info__intro">
+              Have a project in mind? I'd love to hear about it. Drop me a
+              message and let's turn your idea into reality.
+            </p>
+
+            <div class="cnt-info__cards">
+              <a
+                href="https://mail.google.com/mail/?view=cm&fs=1&to=masym32@gmail.com"
+                target="_blank"
+                class="cnt-link"
+                data-magnetic
+              >
+                <div class="cnt-link__icon">
+                  <i class="fa-solid fa-envelope"></i>
+                </div>
+                <div class="cnt-link__body">
+                  <span class="cnt-link__label">Email</span>
+                  <span class="cnt-link__value">masym32@gmail.com</span>
+                </div>
+                <div class="cnt-link__arrow">
+                  <i class="fa-solid fa-arrow-right"></i>
+                </div>
+              </a>
+
+              <a href="tel:+201067051818" class="cnt-link" data-magnetic>
+                <div class="cnt-link__icon">
+                  <i class="fa-solid fa-phone"></i>
+                </div>
+                <div class="cnt-link__body">
+                  <span class="cnt-link__label">Phone</span>
+                  <span class="cnt-link__value">+20 10 6705 1818</span>
+                </div>
+                <div class="cnt-link__arrow">
+                  <i class="fa-solid fa-arrow-right"></i>
+                </div>
+              </a>
+
+              <a
+                href="https://wa.me/201067051818"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="cnt-link"
+                data-magnetic
+              >
+                <div class="cnt-link__icon">
+                  <i class="fa-brands fa-whatsapp"></i>
+                </div>
+                <div class="cnt-link__body">
+                  <span class="cnt-link__label">WhatsApp</span>
+                  <span class="cnt-link__value">Chat on WhatsApp</span>
+                </div>
+                <div class="cnt-link__arrow">
+                  <i class="fa-solid fa-arrow-right"></i>
+                </div>
+              </a>
+            </div>
+
+            <div class="cnt-info__socials">
+              <a
+                href="https://www.linkedin.com/in/masy-mohamed/"
+                target="_blank"
+                class="cnt-social"
+                data-magnetic
+                title="LinkedIn"
+                ><i class="fa-brands fa-linkedin-in"></i
+              ></a>
+              <a
+                href="https://github.com/masy43"
+                target="_blank"
+                class="cnt-social"
+                data-magnetic
+                title="GitHub"
+                ><i class="fa-brands fa-github"></i
+              ></a>
+            </div>
+          </div>
+
+          <!-- Right — Form Panel -->
+          <div class="cnt-form">
+            <div class="cnt-form__accent"></div>
+            <div class="cnt-form__header">
+              <div class="cnt-form__icon">
+                <i class="fa-solid fa-paper-plane"></i>
+              </div>
+              <div>
+                <h3 class="cnt-form__title">Send a Message</h3>
+                <p class="cnt-form__subtitle">
+                  I'll get back to you within 24 hours.
+                </p>
+              </div>
+            </div>
+            <form>
+              <div class="cnt-form__row">
+                <div class="cnt-field">
+                  <label class="cnt-field__label" for="cnt-name">
+                    <i class="fa-solid fa-user"></i> Name
+                  </label>
+                  <input
+                    type="text"
+                    id="cnt-name"
+                    name="name"
+                    class="cnt-field__input"
+                    placeholder="Your full name"
+                  />
+                </div>
+                <div class="cnt-field">
+                  <label class="cnt-field__label" for="cnt-email">
+                    <i class="fa-solid fa-at"></i> Email
+                  </label>
+                  <input
+                    type="email"
+                    id="cnt-email"
+                    name="email"
+                    class="cnt-field__input"
+                    placeholder="you@example.com"
+                  />
+                </div>
+              </div>
+              <div class="cnt-field">
+                <label class="cnt-field__label" for="cnt-subject">
+                  <i class="fa-solid fa-tag"></i> Subject
+                </label>
+                <input
+                  type="text"
+                  id="cnt-subject"
+                  name="subject"
+                  class="cnt-field__input"
+                  placeholder="What's this about?"
+                />
+              </div>
+              <div class="cnt-field">
+                <label class="cnt-field__label" for="cnt-message">
+                  <i class="fa-solid fa-message"></i> Message
+                </label>
+                <textarea
+                  id="cnt-message"
+                  name="message"
+                  class="cnt-field__input"
+                  placeholder="Tell me about your project, goals, and timeline..."
+                ></textarea>
+              </div>
+              <button type="submit" class="cnt-form__submit" data-magnetic>
+                <span>Send Message</span>
+                <i class="fa-solid fa-arrow-right"></i>
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="container footer-content">
+        <div class="footer-left">
+          <a href="#cover" class="logo" data-magnetic>
+            <img
+              src="src/images/headerPhoto.png"
+              alt="Masy Mohamed"
+              class="logo-img"
+            />
+          </a>
+          <p>© 2026 Masy Mohamed. All rights reserved.</p>
+        </div>
+        <div class="footer-right">
+          <a
+            href="#cover"
+            class="btn-back-top"
+            data-magnetic
+            title="Back to top"
+          >
+            <i class="fa-solid fa-arrow-up"></i>
+          </a>
+        </div>
+      </div>
+    </footer>
+
+    <div id="features-modal" class="modal">
+      <div class="modal-backdrop"></div>
+      <div class="modal-content">
+        <div class="modal-header">
+          <h2 id="modal-title">Project Features</h2>
+          <button class="close-modal" aria-label="Close">
+            <i class="fa-solid fa-xmark"></i>
+          </button>
+        </div>
+        <div class="modal-body">
+          <ul id="features-list"></ul>
+        </div>
+      </div>
+    </div>
+
+    <script src="src/js/main.js"></script>
+  </body>
+</html>
