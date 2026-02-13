@@ -6,7 +6,7 @@
 
 A premium, dark-themed personal portfolio showcasing my skills, projects, and experience — built entirely with **vanilla HTML, CSS & JavaScript**.
 
-[![Live Demo](https://img.shields.io/badge/🔗_Live_Demo-Visit_Site-8B5CF6?style=for-the-badge&logoColor=white)](https://your-live-url.vercel.app)
+[![Live Demo](https://img.shields.io/badge/🔗_Live_Demo-Visit_Site-8B5CF6?style=for-the-badge&logoColor=white)](https://masy-portfolio-live.vercel.app/)
 [![GitHub](https://img.shields.io/badge/GitHub-masy43-181717?style=for-the-badge&logo=github)](https://github.com/masy43)
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-Masy_Mohamed-0A66C2?style=for-the-badge&logo=linkedin)](https://www.linkedin.com/in/masy-mohamed/)
 
