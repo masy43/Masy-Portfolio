@@ -18,12 +18,8 @@ A premium, dark-themed personal portfolio showcasing my skills, projects, and ex
 
 <div align="center">
 
-<!-- Replace the path below with an actual screenshot of your portfolio -->
-<!-- Tip: Open index.html in your browser, take a full-page screenshot, save it as preview.png in the root -->
 
-> 🖼️ **To add a preview:** Take a screenshot of your live site and save it as `preview.png` in the project root, then uncomment the line below.
-
-<!-- ![Portfolio Preview](./preview.png) -->
+ ![Portfolio Preview](./preview.png)
 
 </div>
 
