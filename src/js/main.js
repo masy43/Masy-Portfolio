@@ -111,10 +111,10 @@ document.addEventListener("DOMContentLoaded", () => {
       const result = /^#?([a-f\d]{2})([a-f\d]{2})([a-f\d]{2})$/i.exec(hex);
       return result
         ? {
-            r: parseInt(result[1], 16),
-            g: parseInt(result[2], 16),
-            b: parseInt(result[3], 16),
-          }
+          r: parseInt(result[1], 16),
+          g: parseInt(result[2], 16),
+          b: parseInt(result[3], 16),
+        }
         : { r: 118, g: 75, b: 36 };
     }
 
@@ -335,37 +335,65 @@ document.addEventListener("DOMContentLoaded", () => {
 
   revealElements.forEach((el) => revealObserver.observe(el));
 
-  // ==================== BACKGROUND TABS (Education & Experience) ====================
-  const bgTabs = document.querySelectorAll(".bg-tab");
-  const bgPanels = document.querySelectorAll(".bg-panel");
+  // ==================== TIMELINE SCROLL ANIMATION (Education & Experience) ====================
+  const timelines = document.querySelectorAll(".timeline");
 
-  bgTabs.forEach((tab) => {
-    tab.addEventListener("click", () => {
-      const target = tab.dataset.tab;
+  if (timelines.length > 0) {
+    const timelineObserver = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            const timeline = entry.target;
 
-      // Switch active tab
-      bgTabs.forEach((t) => t.classList.remove("active"));
-      tab.classList.add("active");
+            // Animate the vertical line
+            timeline.classList.add("tl-visible");
 
-      // Switch active panel with staggered card animation
-      bgPanels.forEach((p) => p.classList.remove("active"));
-      const activePanel = document.getElementById("panel-" + target);
-      if (activePanel) {
-        activePanel.classList.add("active");
+            // Stagger-animate each entry
+            const tlEntries = timeline.querySelectorAll(".timeline-entry");
+            tlEntries.forEach((tlEntry, i) => {
+              setTimeout(() => {
+                tlEntry.classList.add("tl-entry-visible");
+              }, 200 + i * 150);
+            });
 
-        // Re-trigger staggered card entrance
-        const cards = activePanel.querySelectorAll(".bg-card");
-        cards.forEach((card, i) => {
-          card.style.opacity = "0";
-          card.style.transform = "translateY(20px)";
-          setTimeout(() => {
-            card.style.transition =
-              "opacity 0.5s var(--ease-out-expo), transform 0.5s var(--ease-out-expo)";
-            card.style.opacity = "1";
-            card.style.transform = "translateY(0)";
-          }, 80 * i);
+            timelineObserver.unobserve(timeline);
+          }
         });
-      }
+      },
+      { threshold: 0.1 },
+    );
+
+    timelines.forEach((tl) => timelineObserver.observe(tl));
+  }
+
+  // ==================== CONTACT SECTION ANIMATIONS ====================
+  const cntInfo = document.querySelector(".cnt-info");
+  const cntForm = document.querySelector(".cnt-form");
+
+  if (cntInfo || cntForm) {
+    const contactObserver = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add("cnt-visible");
+            contactObserver.unobserve(entry.target);
+          }
+        });
+      },
+      { threshold: 0.15 },
+    );
+
+    if (cntInfo) contactObserver.observe(cntInfo);
+    if (cntForm) contactObserver.observe(cntForm);
+  }
+
+  // Input focus state — toggles .focused on parent .cnt-field
+  document.querySelectorAll(".cnt-field__input").forEach((input) => {
+    input.addEventListener("focus", () => {
+      input.closest(".cnt-field")?.classList.add("focused");
+    });
+    input.addEventListener("blur", () => {
+      input.closest(".cnt-field")?.classList.remove("focused");
     });
   });
 
@@ -554,28 +582,28 @@ document.addEventListener("DOMContentLoaded", () => {
     projObserver.observe(projShowcase);
   }
 
-  // ==================== TESTIMONIALS SCROLL ANIMATION ====================
-  const testiTrack = document.querySelector(".testi-track");
-  if (testiTrack) {
-    const testiCards = testiTrack.querySelectorAll(".testi-card");
+  // ==================== TESTIMONIALS MARQUEE ====================
+  const testiMarquee = document.querySelector(".testi-marquee");
+  if (testiMarquee) {
+    const track = testiMarquee.querySelector(".testi-track");
+    // Start with animation paused, play when in view
+    if (track) {
+      track.style.animationPlayState = "paused";
 
-    const testiObserver = new IntersectionObserver(
-      (entries) => {
-        entries.forEach((entry) => {
-          if (entry.isIntersecting) {
-            testiCards.forEach((card, index) => {
-              setTimeout(() => {
-                card.classList.add("testi-visible");
-              }, index * 140);
-            });
-            testiObserver.unobserve(entry.target);
-          }
-        });
-      },
-      { threshold: 0.1 },
-    );
+      const testiObserver = new IntersectionObserver(
+        (entries) => {
+          entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+              track.style.animationPlayState = "running";
+              testiObserver.unobserve(entry.target);
+            }
+          });
+        },
+        { threshold: 0.1 },
+      );
 
-    testiObserver.observe(testiTrack);
+      testiObserver.observe(testiMarquee);
+    }
   }
 
   // ==================== CONTACT SCROLL ANIMATION ====================
@@ -729,13 +757,13 @@ document.addEventListener("DOMContentLoaded", () => {
         );
         const body = encodeURIComponent(
           "Name: " +
-            name +
-            "\nEmail: " +
-            email +
-            "\nSubject: " +
-            subject +
-            "\n\nMessage:\n" +
-            message,
+          name +
+          "\nEmail: " +
+          email +
+          "\nSubject: " +
+          subject +
+          "\n\nMessage:\n" +
+          message,
         );
         const gmailUrl =
           "https://mail.google.com/mail/?view=cm&fs=1&to=masym32@gmail.com&su=" +

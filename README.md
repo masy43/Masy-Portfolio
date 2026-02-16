@@ -18,12 +18,7 @@ A premium, dark-themed personal portfolio showcasing my skills, projects, and ex
 
 <div align="center">
 
-<!-- Replace the path below with an actual screenshot of your portfolio -->
-<!-- Tip: Open index.html in your browser, take a full-page screenshot, save it as preview.png in the root -->
-
-> 🖼️ **To add a preview:** Take a screenshot of your live site and save it as `preview.png` in the project root, then uncomment the line below.
-
-<!-- ![Portfolio Preview](./preview.png) -->
+![Portfolio Preview](./preview.png)
 
 </div>
 
@@ -42,6 +37,7 @@ A meticulously crafted **single-page portfolio** with cinematic visual effects, 
 | ⌨️ **Typing Animation** | Dynamic role typewriter effect in the hero section |
 | 🖱️ **Custom Cursor** | Dot + outline cursor with magnetic hover effects |
 | 📐 **Tilt Effects** | 3D parallax card tilts on project & service cards |
+| 💎 **Premium UI** | Glassmorphism, floating orbs, gradients, and shimmer effects |
 | 📱 **Fully Responsive** | Mobile-first design with hamburger nav and fluid layouts |
 | 🎭 **Scroll Animations** | Reveal-on-scroll transitions with configurable delays |
 | 🔗 **Font Awesome Icons** | Rich iconography throughout every section |
@@ -81,12 +77,12 @@ masy/
 |---|---------|-------------|
 | 🏠 | **Hero** | Animated intro with typing effect, gradient text, CTA buttons, and floating photo card |
 | 👤 | **About** | Personal intro with 3 highlight cards — End-to-End Engineering, Scalable Backend Systems, Performance Obsessed |
-| 🎓 | **Education & Experience** | Tabbed interface (Education / Experience) with timeline cards — B.Sc. CS, HCIA-AI, DEPI, NTI, El-Araby |
+| 🎓 | **Education & Experience** | Dual-column vertical timeline with glassmorphism cards, animated connectors, and scroll-triggered entrance effects |
 | 🛠️ | **Skills** | Filterable skill mosaic (All / Frontend / Backend / Database / Tools) with 15+ technologies |
 | 💼 | **Services** | Bento-grid layout — 7 service cards covering Full Stack, Frontend, Backend, Database, Auth, Performance, Deployment |
 | 🚀 | **Projects** | 6 featured projects with hover overlays, tech tags, live demos, and feature modals |
-| ⭐ | **Testimonials** | Client review cards with star ratings and author details |
-| 📬 | **Contact** | Contact info cards (Email, Phone, WhatsApp) + message form with social links |
+| ⭐ | **Testimonials** | Infinite marquee carousel with glassmorphic cards, rating stats, and smooth edge fading |
+| 📬 | **Contact** | Premium contact section featuring a hero banner with floating orbs, glassmorphic form, and interactive inputs |
 
 ---
 
