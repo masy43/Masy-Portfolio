@@ -6,7 +6,7 @@
 
 A premium, dark-themed personal portfolio showcasing my skills, projects, and experience — built entirely with **vanilla HTML, CSS & JavaScript**.
 
-[![Live Demo](https://img.shields.io/badge/🔗_Live_Demo-Visit_Site-8B5CF6?style=for-the-badge&logoColor=white)](https://your-live-url.vercel.app)
+[![Live Demo](https://img.shields.io/badge/🔗_Live_Demo-Visit_Site-8B5CF6?style=for-the-badge&logoColor=white)](https://masy-portfolio-live.vercel.app/)
 [![GitHub](https://img.shields.io/badge/GitHub-masy43-181717?style=for-the-badge&logo=github)](https://github.com/masy43)
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-Masy_Mohamed-0A66C2?style=for-the-badge&logo=linkedin)](https://www.linkedin.com/in/masy-mohamed/)
 
@@ -18,7 +18,12 @@ A premium, dark-themed personal portfolio showcasing my skills, projects, and ex
 
 <div align="center">
 
-![Portfolio Preview](./preview.png)
+<!-- Replace the path below with an actual screenshot of your portfolio -->
+<!-- Tip: Open index.html in your browser, take a full-page screenshot, save it as preview.png in the root -->
+
+> 🖼️ **To add a preview:** Take a screenshot of your live site and save it as `preview.png` in the project root, then uncomment the line below.
+
+<!-- ![Portfolio Preview](./preview.png) -->
 
 </div>
 
